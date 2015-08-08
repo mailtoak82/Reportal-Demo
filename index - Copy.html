@@ -6,7 +6,6 @@
 
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/example.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
         <script type="text/javascript">
@@ -19,41 +18,30 @@
 						$('.parlx').css('top', ((scrolled-pos) * 0.31) + 'px');
 				    });
 				});
-				function animatearrow()
-				{
-				$('.maboutUs').animate({"font-size":"20px"},1000,
-					function(){
-        				$('.maboutUs').animate({"font-size":"14px"},1000);
-        				animatearrow();
-        				}
-        		);
-        		}
-        		animatearrow();
+
 				$('.webcodo-top>ul>li:nth-child(1)>a').click(function(e){
 					e.preventDefault();
-					$('html, body').animate({scrollTop:$('#section-one').offset().top-0}, 1000);
+					$('html, body').animate({scrollTop:$('#section-one').offset().top-40}, 1000);
 			    });
 
-
-				$('.webcodo-top>.defalt>li:nth-child(2)>a,#section-one>h2>a,.maboutUs').click(function(e){
+				$('.webcodo-top>.defalt>li:nth-child(2)>a').click(function(e){
 					e.preventDefault();
-			    	$('html, body').animate({scrollTop:$('#section-two').offset().top-60}, 1000);
-			    	$('.webcodo-top').animate({bottom:$('#section-two').offset().top-120}, 1000);
+			    	$('html, body').animate({scrollTop:$('#section-two').offset().top-40}, 1000);
 			    });			    
 
 				$('.webcodo-top>.defalt>li:nth-child(3)>a').click(function(e){
 					e.preventDefault();
-			    	$('html, body').animate({scrollTop:$('#section-three').offset().top-60}, 1000);
+			    	$('html, body').animate({scrollTop:$('#section-three').offset().top-40}, 1000);
 			    });			    
 
 				$('.webcodo-top>.defalt>li:nth-child(4)>a').click(function(e){
 					e.preventDefault();
-			    	$('html, body').animate({scrollTop:$('#section-four').offset().top-60}, 1000);
+			    	$('html, body').animate({scrollTop:$('#section-four').offset().top-40}, 1000);
 			    });			    
 
 				$('.webcodo-top>.defalt>li:nth-child(5)>a').click(function(e){
 					e.preventDefault();
-			    	$('html, body').animate({scrollTop:$('#section-five').offset().top-60}, 1000);
+			    	$('html, body').animate({scrollTop:$('#section-five').offset().top-40}, 1000);
 			    });			    
 
 			});
@@ -63,7 +51,7 @@
 <body>
 	
 	
-	<div class="webcodo-top" style="position:fixed; z-index:9998" >
+	<div class="webcodo-top" style="position:fixed; z-index:9999" >
         <ul class="defalt">
         	<li class="wcd"><a href="#section-one"><div class="wcd wcd-tuto">Home</div></a></li>
         	<li class="wcd"><a href="#section-two"><div class="wcd wcd-tuto">About Us</div></a></li>
@@ -77,8 +65,7 @@
  	
  	<section class="section-one" id="section-one">
  		<div class="prlx-1"></div>
- 		<h2><a>More About Us <i class="fa fa-long-arrow-right"></i></a></h2>
- 		<div class="maboutUs"><a><i class="fa fa-angle-double-down"></i></a></div>
+ 		<h2>FIRST PARALLAX EFFECT IN .prlx-1</h2>
  	</section>
  	<section class="section-two" id="section-two">
  		<p>
